@@ -1,0 +1,62 @@
+
+*{
+    box-sizing: border-box;
+}
+body,div,label,option,select,ul,li{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+body{
+    font-size: 1.2rem;
+    background-color: #444;
+    color:#ccc
+}
+.options-container{
+    margin:50px  auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.showOption{
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    justify-content: space-between;
+    width: 200px;
+    cursor: pointer;
+}
+.optionList{
+    border: 2px solid #ccc;
+    border-radius:18px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 10px;
+    display: none;
+}
+.option{
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.option:last-child{
+    border: none;
+}
+.option:hover{
+    color:#fff
+}
+
+.check{
+    color:#fff;
+    padding: 1px;
+    transform: scale(.7);
+    background-color: #000;
+    border-radius: 50%;
+}
